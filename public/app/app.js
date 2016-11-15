@@ -33,7 +33,7 @@
         $scope.title = "¡Hola mundo!";
         $scope.deudas = [];
 
-        $http.get("/deudas").then(function(res){
+        $http.get("/deudas/get").then(function(res){
             $scope.deudas = res.data;
         });
     });

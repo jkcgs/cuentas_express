@@ -17,6 +17,16 @@
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
 
+        <!-- socketo -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+        var socket = io.connect('/');
+        socket.on('news', function (data) {
+            console.log(data);
+            socket.emit('my other event', { my: 'data' });
+        });
+        </script>
+
         <!-- Angular app -->
         <script src="app/app.js"></script>
     </body>

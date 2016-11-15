@@ -7,9 +7,11 @@
 <table ng-if="deudas.length" class="table">
     <thead>
         <th>Nombre</th>
+        <th>Opciones</th>
     </thead>
 
     <tr ng-repeat="deuda in deudas">
         <td>{{deuda.nombre}}</td>
+        <td>Editar</td>
     </tr>
 </table>

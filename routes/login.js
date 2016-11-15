@@ -4,7 +4,6 @@ var Usuario = require("../models/usuario.js");
 
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/cuentas');
 
 router.post('/login', function(req, res) {
   var query = Usuario.findOne({username: req.body.username, password: req.body.password});
