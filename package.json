@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "DEBUG=cuentas:* node ./app"
+    "start": "set DEBUG=cuentas:*&& node ./app"
   },
   "dependencies": {
     "body-parser": "~1.15.2",

@@ -6,5 +6,6 @@ module.exports = mongoose.model('deudas', {
     "fecha_agregado": Date,
     "fecha_pagado": Date,
     "fecha_pagar": Date,
-    "monto": Number
+    "monto": Number,
+    "usuario": mongoose.Schema.Types.ObjectId
 }); 
