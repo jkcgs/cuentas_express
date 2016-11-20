@@ -7,9 +7,10 @@
         <title>Prueba</title>
 
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
+        <resolve-loader></resolve-loader>
         <div class="container" ng-view></div>
 
         <script src="//code.jquery.com/jquery.js"></script>
@@ -29,5 +30,11 @@
 
         <!-- Angular app -->
         <script src="app/app.js"></script>
+        <script src="app/directives/resolve-loader.directive.js"></script>
+        <script src="app/login/login.service.js"></script>
+        <script src="app/login/login.controller.js"></script>
+        <script src="app/deudas/deudas.service.js"></script>
+        <script src="app/deudas/deudas.config.js"></script>
+        <script src="app/deudas/deudas.controller.js"></script>
     </body>
 </html>
